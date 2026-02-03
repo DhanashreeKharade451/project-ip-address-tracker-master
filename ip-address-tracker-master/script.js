@@ -36,18 +36,18 @@ searchForm.addEventListener("submit", function(event){
 
 });
 
-// async function fetchData(ipAddress) {
-//   try {
-//     const response = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey= ${key} & ipAddress= ${ipAddress} `);
-//     if (!response.ok) {
-//       throw new Error("Network response was not ok");
-//     }
-//     const data = await response.json();
-//     renderAPIData(data);
-//   } catch (error) {
-//     console.error("Fetch error:", error);
-//   }
-// }
+async function fetchData(ipAddress) {
+  try {
+    const response = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey= ${key} & ipAddress= ${ipAddress} `);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const data = await response.json();
+    renderAPIData(data);
+  } catch (error) {
+    console.error("Fetch error:", error);
+  }
+}
 
 
 function renderAPIData(data) {
