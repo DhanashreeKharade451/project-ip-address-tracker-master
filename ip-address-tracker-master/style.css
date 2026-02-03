@@ -1,0 +1,101 @@
+:root{
+   --Very-Dark-Gray: hsl(0, 0%, 17%);
+   --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 18px;
+    display: grid;
+    
+}
+main{
+    min-height: 500vh;
+    display: grid;
+    
+}
+ #searchForm{
+    text-align: center;
+    grid-template-columns: 1fr;
+    border: 2px solid red;
+    
+    width: 100%;
+    height: 200px;
+
+    max-width: 100%;
+    background-image: url(./images/pattern-bg-desktop.png);
+    z-index: 0;
+    
+ }
+h1{
+    color: white;
+}
+
+
+ #searchInput{
+    flex:1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    height: 2%;
+    margin-right: -5px;
+ }
+
+ #submit{
+    background: black;
+    padding: 10px;
+ }
+
+.middle{
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    border: 2px solid rgb(0, 255, 8);
+    background-color: white;
+    z-index: 1;
+    width: 70%;
+    position: absolute;
+    right: 20vw;
+    height: 100px;
+    top: 27%;
+
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.info-item{
+    display: inline-block ;
+    
+    
+    
+}
+.label{
+    display:block;
+
+}
+
+.divider{
+    
+   
+    width: 1px;
+    height: 5px;
+    
+}
+
+.temp{
+    border: 2px solid black;
+}
+
+#map { 
+    z-index: 0;
+    height: 500px;
+    border: 5px solid rgb(236, 10, 10);
+}
+
+
+ @media screen {
+
+    display : flex ;    
+} 
