@@ -3,15 +3,38 @@
    --Dark-Gray: hsl(0, 0%, 59%);
 }
 
-body{
-    font-family: "Rubik", sans-serif;
-    min-height: 100vh;
+*{
     margin: 0;
-    
-    font-size: 18px;
-    display: grid;
+    padding: 0;
+    box-sizing: border-box;
     
 }
+
+.container{
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+  justify-content: center;   /* horizontal alignment */
+  align-items: center; 
+  
+  
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--Very-Dark-Gray);
+     background-color: #f9f9f9;
+     line-height: 1.5;
+    display: grid;
+    
+    
+}
+
+
 main{
     min-height: 500vh;
     display: grid;
@@ -21,11 +44,10 @@ main{
     margin: 0;
     text-align: center;
     grid-template-columns: 1fr;
-    /* border: 2px solid red; */
+    border: 2px solid rgb(213, 235, 107);
     
     width: 100%;
-    height: 200px;
-
+    height: 350px;
     max-width: 100%;
     background-image: url(./images/pattern-bg-desktop.png);
     z-index: 0;
@@ -33,7 +55,21 @@ main{
  }
 h1{
     color: white;
+    font-weight: 700;
 }
+
+.searchbox{
+
+    /* border: 2px solid red; */
+    margin-top: 70px;
+
+  
+  
+}
+/* #searchboxInput{
+    border: 2px solid red;
+    border-radius: 10px;
+} */
 
 
  #searchInput{
@@ -43,19 +79,24 @@ h1{
     font-size: 16px;
     height: 2%;
     margin-right: -5px;
+    min-height: 50px;
+     
  }
 
  #submit{
     background: black;
     padding: 10px;
+    min-height: 50px;
+    
  }
 
 .middle{
    
+    font-size: 18px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     
     /* border: 2px solid rgb(0, 255, 8); */
     background-color: white;
@@ -64,19 +105,27 @@ h1{
     position: absolute;
     right: 20vw;
     height: 20vh;
-    top: 32%;
+    top: 40%;
 
     left: 50%;
     transform: translate(-50%,-50%);
+
+    
 }
 .info-item{
-    display: inline-block ;
-    
-    
-    
+    display: inline-block;
+    font-size: 30px;   
+}
+
+.value{
+    font-size: 18px;
 }
 .label{
     display:block;
+    font-size: 18px;
+    color: var(--Dark-Gray);
+    font-weight: 500
+    
 
 }
 
@@ -94,13 +143,20 @@ h1{
 
 #map { 
     z-index: 0;
-    height: 500px;
+    height: 100%;
     margin: 0;
     border: 5px solid rgb(236, 10, 10);
+    position: relative;
 }
 
 
- /* @media screen {
+ @media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 
-    display : flex ;    
-}  */
+  .section{
+    max-width: 600px;
+    margin: auto;
+  }
+}
