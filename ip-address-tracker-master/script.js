@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initialized = true;
   const res = await fetch("https://ipinfo.io/json");
   const data = await res.json();
+  console.log("data::::",data)
   fetchData(data.ip)
 });
 
@@ -63,7 +64,6 @@ async function fetchData(ipAddress) {
 function renderAPIData(data) {
   ipAddressSpan.textContent = data.ip;
   locationSpan.textContent = `${data.location.city}, ${data.location.region} ${data.location.postalCode}`;
-  console.log("locationSpan.textContent::",locationSpan.textContent)
   timezoneSpan.textContent = `UTC ${data.location.timezone}`;
   ispSpan.textContent = data.isp;
   showCity(locationSpan.textContent)

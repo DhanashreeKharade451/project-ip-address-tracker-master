@@ -92,6 +92,7 @@ h1{
 
 .middle{
    
+    justify-content: baseline;
     font-size: 18px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -122,6 +123,7 @@ h1{
 }
 .label{
     display:block;
+    
     font-size: 18px;
     color: var(--Dark-Gray);
     font-weight: 500
