@@ -1,4 +1,30 @@
 # Frontend Mentor - IP address tracker
+Link to the Live Demo
+Project Deployed Link: https://dhanashreekharade451.github.io/project-ip-address-tracker-master/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Answer for reflection Questions:
+*********************
+
+Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.
+Include this reflection in your GitHub repository.
+
+Ans:
+
+**During the development of the IP Address Tracker application, I focused on building a clean, responsive, and user-friendly interface while integrating real-time geolocation data using the IPify API and LeafletJS. I started by structuring the HTML layout and styling the UI to match the Frontend Mentor design using CSS Grid and Flexbox. Once the layout was complete, I implemented JavaScript logic to fetch IP address data asynchronously and dynamically update the DOM with the retrieved location, timezone, and ISP details.
+
+One of the main challenges I faced was handling responsiveness across different screen sizes. Initially, I used fixed heights and absolute positioning, which caused layout issues on mobile devices. I resolved this by switching to a mobile-first approach, using flexible units, grid layouts, and media queries. Another challenge was managing API errors and invalid user inputs. I added validation checks and user-friendly error messages to improve reliability and user experience.
+
+Integrating LeafletJS for map rendering also required careful handling of map re-centering and marker updates after each search. I solved this by dynamically updating the map view instead of recreating it, which improved performance.
+
+If I continue improving this project, I would add features such as a loading spinner, recent search history, dark mode, and better accessibility support (ARIA labels and keyboard navigation). Overall, this project strengthened my skills in API integration, responsive design, and DOM manipulation while reinforcing best practices for building interactive web applications.
+
+** I tried to deploy project 2 ways 1 from Render But It  showed error "Build Failed" in my all 5 attempts.
+LAter I Tried from GitHub Build was deployed but it was showing Error "404 Not found"  
+
+
+
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
