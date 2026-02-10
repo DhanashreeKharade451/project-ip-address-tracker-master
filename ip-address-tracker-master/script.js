@@ -1,4 +1,4 @@
-// import { key } from "./secret.js";
+ import { key } from "./secret.js";
 
 const from = document.getElementById("form");
 const searchForm = document.getElementById("searchForm");
@@ -53,7 +53,7 @@ searchForm.addEventListener("submit", function (event) {
   fetchData(searchInput.value);
 });
 
-const key = "at_JRU4SsXqx6Kuf3txHZffrDCoIBaDM";
+//const key = "";
 async function fetchData(ipAddress) {
   try {
     const response = await fetch(
