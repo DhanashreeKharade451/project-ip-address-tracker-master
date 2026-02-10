@@ -53,7 +53,7 @@ searchForm.addEventListener("submit", function (event) {
   fetchData(searchInput.value);
 });
 
-const key ="";
+const key = "at_JRU4SsXqx6Kuf3txHZffrDCoIBaDM";
 async function fetchData(ipAddress) {
   try {
     const response = await fetch(
@@ -63,11 +63,11 @@ async function fetchData(ipAddress) {
       throw new Error("Network response was not ok");
     }
     const data = await response.json();
-    localStorage.setItem("Fetched API Data", JSON.stringify(data)); 
+    localStorage.setItem("Fetched API Data", JSON.stringify(data));
     renderAPIData(data);
   } catch (error) {
     console.error("Fetch error:", error);
-  } 
+  }
 }
 
 function renderAPIData(data) {
